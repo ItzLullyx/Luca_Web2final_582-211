@@ -1,0 +1,57 @@
+/*----- Styles Généraux -----*/
+
+:root {
+    --beige: #d1a158;
+    --beige-fonce: #a86a18;
+    --blanc: white;
+
+    --walter: "Walter";
+}
+
+@font-face {
+    font-family: "Walter";
+    src: url(../assets/polices/WalterTurncoat-Regular.ttf)
+}
+
+html {
+    font-family: var(--walter);
+}
+
+/*-------------------*/
+/*----- En-tête -----*/
+/*-------------------*/
+
+.logonomsite {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 103px;
+    height: 56px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+ul {
+    display: flex;
+
+    list-style-type: none;
+}
+
+/*--------------------------*/
+/*----- Bande de titre -----*/
+/*--------------------------*/
+
+/*------------------------------*/
+/*----- Contenu de la page -----*/
+/*------------------------------*/
+
+/*------------------------*/
+/*----- Pied de page -----*/
+/*------------------------*/
