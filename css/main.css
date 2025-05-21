@@ -4,6 +4,7 @@
     --beige: #d1a158;
     --beige-fonce: #a86a18;
     --blanc: white;
+    --noir: black;
 
     --walter: "Walter";
 }
@@ -15,6 +16,10 @@
 
 html {
     font-family: var(--walter);
+}
+
+body {
+    margin: 0px;
 }
 
 /*-------------------*/
@@ -31,6 +36,12 @@ html {
     height: 56px;
 }
 
+.nomsite {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 28px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -39,18 +50,41 @@ nav {
 }
 
 ul {
-    display: flex;
-
+    display: none;
     list-style-type: none;
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--noir);
 }
 
 /*--------------------------*/
 /*----- Bande de titre -----*/
 /*--------------------------*/
 
+.bandetitre {
+    background-image: url(/assets/images/arriereplan_bande.png);
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25) inset;
+}
+
+.titrepage {
+    color: white;
+    font-size: 40px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.40);
+}
+
 /*------------------------------*/
 /*----- Contenu de la page -----*/
 /*------------------------------*/
+
+
 
 /*------------------------*/
 /*----- Pied de page -----*/
