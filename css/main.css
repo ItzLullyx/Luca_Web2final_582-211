@@ -2,6 +2,7 @@
 /*----- Styles Généraux -----*/
 /*---------------------------*/
 
+/* Palette de couleurs du site */
 :root {
     --beige: #d1a158;
     --beige-fonce: #a86a18;
@@ -11,15 +12,18 @@
     --walter: "Walter";
 }
 
+/* Police du site */
 @font-face {
     font-family: "Walter";
     src: url(../assets/polices/WalterTurncoat-Regular.ttf)
 }
 
+/* Appliquer la police */
 html {
     font-family: var(--walter);
 }
 
+/* Organiser le contenu du site au complet */
 body {
     margin: 0px;
     display: flex;
@@ -30,6 +34,7 @@ body {
 /*----- En-tête -----*/
 /*-------------------*/
 
+/* En-tête où le logo et le nom du site est à gauche et les hyperliens et la barre de recherche sont à droite en mobile */
 .logonomsite {
     display: flex;
     align-items: center;
@@ -64,9 +69,15 @@ li {
     align-self: center;
 }
 
+/* Transition lorsqu'on hover sur les hyperliens */
+a:hover {
+    color: var(--beige-fonce);
+}
+
 a {
     text-decoration: none;
     color: var(--noir);
+    transition: color 0.3s;
 }
 
 .barrerecherche {
@@ -86,6 +97,7 @@ a {
 /*----- Bande de titre -----*/
 /*--------------------------*/
 
+/* Bande de titre avec le nom de l'onglet et l'arrière-plan d'ancien papier, tout le long du width de la page */
 .bandetitre {
     background-image: url(/assets/images/arriereplan_bande.png);
     height: 140px;
@@ -106,6 +118,7 @@ a {
 /*----- Contenu de la page -----*/
 /*------------------------------*/
 
+/* Bloc de chaque moyen de contact, avec le texte en dessous de chacun */
 .contenu {
     display: flex;
     flex-direction: column;
@@ -142,6 +155,7 @@ a {
 /*----- Pied de page -----*/
 /*------------------------*/
 
+/* Pied de page avec le logo et le copyright, avec de l'ancien papier en arrière-plan */
 footer {
     background-image: url(/assets/images/arriereplan_bande.png);
     display: flex;
@@ -168,6 +182,7 @@ footer {
 /*----- Conditions ordinateur -----*/
 /*---------------------------------*/
 
+/* Si un ordinateur est utilisé, le overflow est caché, les éléments cachés en mobile (hyperliens) sont montrés et les éléments du contenu de la page sont placés horizontalement */
 @media screen and (min-width: 1325px) {
     body {
         overflow: hidden;
